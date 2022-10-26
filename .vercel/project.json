@@ -1,0 +1,15 @@
+{
+  "projectId": "prj_UttSYcmoAS6DCHmkvCtugAHsmCmq",
+  "orgId": "l27t0iF2YSszA3DlpIVF42Dy",
+  "settings": {
+    "createdAt": 1666787681958,
+    "framework": "remix",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "16.x"
+  }
+}

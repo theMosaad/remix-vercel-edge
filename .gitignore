@@ -2,7 +2,7 @@ node_modules
 
 .cache
 .env
-.vercel
+# .vercel
 .output
 
 /build/

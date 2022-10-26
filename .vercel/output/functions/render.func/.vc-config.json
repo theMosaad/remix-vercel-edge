@@ -1,0 +1,6 @@
+{
+  "runtime": "edge",
+  "name": "render",
+  "deploymentTarget": "v8-worker",
+  "entrypoint": "api/index.js"
+}
