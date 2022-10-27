@@ -2,8 +2,9 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "start": "edge-runtime --listen ./build/index.js"
+    "dev:build": "cross-env NODE_ENV=development remix build",
+    "dev:start": "cross-env NODE_ENV=production edge-runtime --listen ./build/index.js",
+    "build": "cross-env NODE_ENV=production remix build"
   },
   "dependencies": {
     "@remix-run/react": "^1.7.3",

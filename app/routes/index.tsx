@@ -1,6 +1,6 @@
 import type { ActionArgs, LoaderArgs } from "@remix-run/server-runtime";
 import { json } from "@remix-run/server-runtime";
-import { Form, useActionData, useLoaderData } from "@remix-run/react";
+import { Form, Link, useActionData, useLoaderData } from "@remix-run/react";
 
 export const loader = async ({ request }: LoaderArgs) => {
   return json({ url: request.url });
@@ -15,9 +15,9 @@ export const action = async ({ request }: ActionArgs) => {
 
 export default function Index() {
   const loaderData = useLoaderData<typeof loader>();
-  console.log(loaderData.url);
+  console.log("loaderData.url: ", loaderData.url);
   const actionData = useActionData<typeof action>();
-  console.log(actionData?.name);
+  console.log("actionData?.name: ", actionData?.name);
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
@@ -31,6 +31,9 @@ export default function Index() {
             Submit
         </button>
       </Form>
+      <Link to="/about">
+        About
+      </Link>
     </div>
   );
 }

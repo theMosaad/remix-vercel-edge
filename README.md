@@ -3,6 +3,11 @@
 ## Demo
 https://remix-vercel-edge-mosaad.vercel.app
 
+## Build and Run Remix (Local)
+```
+npm i && npm run dev:build && npm run dev:start
+```
+
 ## Clone vercel/vercel
 ```bash
 git clone git@github.com:vercel/vercel.git
@@ -26,7 +31,7 @@ git checkout remix-edge
 yarn && yarn build
 ```
 
-## Build Remix
+## Build Remix (Prod)
 ```bash
 # ./vercel/packages/cli
 yarn dev build --cwd ~/code/remix-vercel-edge --prod
