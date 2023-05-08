@@ -8,5 +8,4 @@ module.exports = {
   // serverBuildPath: "build/index.js",
   // publicPath: "/build/",
   serverBuildPath: "api/index.js",
-  server: process.env.NODE_ENV === "development" ? undefined : "./server.ts",
 };
